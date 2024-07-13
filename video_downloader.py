@@ -3,7 +3,7 @@ import random
 import requests
 from moviepy.editor import VideoFileClip, concatenate_videoclips, AudioFileClip
 
-PEXELS_API_KEY = "DviKta28XrKq8yDY4oPc9DUVyT10deEW6GONd4JVCsfP7OdPbrkyOhuv"
+PEXELS_API_KEY = "YOUR API KEY HERE"
 
 def download_random_video(query, folder_path):
     # Make a request to the Pexels API
