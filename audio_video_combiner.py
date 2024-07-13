@@ -4,7 +4,7 @@ from moviepy.editor import VideoFileClip, AudioFileClip
 video_clip = VideoFileClip("video_without_audio.mp4")
 
 # Load the audio file
-audio_clip = AudioFileClip("combined_audio.mp3")
+audio_clip = AudioFileClip("output.mp3")
 
 # Set the audio of the video to the loaded audio clip
 video_clip = video_clip.set_audio(audio_clip)

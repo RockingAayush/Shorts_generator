@@ -3,7 +3,7 @@ import random
 import requests
 from moviepy.editor import VideoFileClip, concatenate_videoclips, AudioFileClip
 
-PEXELS_API_KEY = "YOUR API KEY HERE"
+PEXELS_API_KEY = "Your API key"
 
 def download_random_video(query, folder_path):
     # Make a request to the Pexels API
@@ -76,8 +76,6 @@ output_video_path = "video_without_audio.mp4"  # Output video path
 # Download a random video
 download_random_video(search_query, download_folder)
 
-# Match video length to audio length and loop the video
-match_audio_length("original.mp4", input_audio_path, output_video_path)
 
 # Remove the original video file
-os.remove("original.mp4")
+# os.remove("original.mp4")

@@ -1,7 +1,6 @@
-from elevenlabs import Voice, VoiceSettings, play, save
+from elevenlabs import save
 from elevenlabs.client import ElevenLabs
 import requests
-import time
 from pydub import AudioSegment
 import os
 
@@ -38,13 +37,16 @@ target_duration = 15  # Target duration in seconds
 quotes = fetch_quotes_until_duration(target_duration)
 text = "\n".join(quotes)
 
-audio = client.generate(
+def text_to_speech(client, text):
+    audio = client.generate(
     text = text,
     voice = "Adam"
 )
 
-save(audio, "input_audio.mp3")
-print("Audio saved Successfully")
+    save(audio, "input_audio.mp3")
+    print("Audio saved Successfully")
+
+text_to_speech(client, text)
 
 
 
