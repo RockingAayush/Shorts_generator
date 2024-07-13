@@ -39,7 +39,8 @@ Optionally, you can remove the original downloaded video file after processing.
 ## Note
 -----
 
--  Ensure you have a stable internet connection to download videos from Pexels.
+-   Make sure to run `quote_voiceover.py` first to generate the `combined_audio.mp3`.
+-   Ensure you have a stable internet connection to download videos from Pexels.
 -   The script uses the first video file link available in the Pexels API response. You can modify the script to choose different resolutions if needed.
 -   The script currently assumes the video file will be saved as `original.mp4`. Adjust the filename and path as necessary.
 
