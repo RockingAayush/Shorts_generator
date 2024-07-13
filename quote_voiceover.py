@@ -28,7 +28,7 @@ def fetch_quotes_until_duration(target_duration):
         quotes.append(quote)
     return quotes
 
-api_key ="b127c6a4011c2ba000f5841920465dbd"
+api_key ="YOUR API KEY HERE"
 client = ElevenLabs(
   api_key=api_key, 
 )
